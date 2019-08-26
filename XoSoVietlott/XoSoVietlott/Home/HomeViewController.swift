@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeViewController: BaseViewController {
     fileprivate var chains = [[Int]]()
@@ -16,7 +17,7 @@ class HomeViewController: BaseViewController {
         for _ in 1...numOfChain {
             chains.append(randomAChain())
         }
-        print(chains)
+        performSegue(withIdentifier: String(describing: ResultViewController.self), sender: chains)
     }
     
     func randomAChain() -> [Int] {
@@ -27,5 +28,11 @@ class HomeViewController: BaseViewController {
             initNums.remove(at: removed)
         }
         return initNums
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultVc = segue.destination as? ResultViewController {
+            resultVc.data = (sender as? [[Int]]) ?? []
+        }
     }
 }

@@ -17,6 +17,8 @@
 		58702C822311A0990079622D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C812311A0990079622D /* BaseViewController.swift */; };
 		58702C842311A1110079622D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C832311A1110079622D /* HomeViewController.swift */; };
 		58702C872311A69D0079622D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C862311A69D0079622D /* BaseButton.swift */; };
+		58B8E6C923128648005F2E20 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8E6C823128648005F2E20 /* ResultViewController.swift */; };
+		58B8E6CB23128A65005F2E20 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		58702C812311A0990079622D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		58702C832311A1110079622D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58702C862311A69D0079622D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		58B8E6C823128648005F2E20 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		7F914746282176BE874EE5EB /* Pods-XoSoVietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XoSoVietlott.debug.xcconfig"; path = "Target Support Files/Pods-XoSoVietlott/Pods-XoSoVietlott.debug.xcconfig"; sourceTree = "<group>"; };
 		9EDC2A72003D4462A5CDC9B0 /* Pods-XoSoVietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XoSoVietlott.release.xcconfig"; path = "Target Support Files/Pods-XoSoVietlott/Pods-XoSoVietlott.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +82,7 @@
 		58702C6B23119C780079622D /* XoSoVietlott */ = {
 			isa = PBXGroup;
 			children = (
+				58B8E6C723128632005F2E20 /* Result */,
 				58702C882311A7FF0079622D /* Home */,
 				58702C852311A6730079622D /* Extensions */,
 				58702C6C23119C780079622D /* AppDelegate.swift */,
@@ -113,6 +118,15 @@
 				58702C832311A1110079622D /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		58B8E6C723128632005F2E20 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				58B8E6C823128648005F2E20 /* ResultViewController.swift */,
+				58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 		95F4ED7FCA73060A4BD5D0DE /* Pods */ = {
@@ -242,9 +256,11 @@
 			files = (
 				58702C6F23119C780079622D /* ViewController.swift in Sources */,
 				58702C6D23119C780079622D /* AppDelegate.swift in Sources */,
+				58B8E6CB23128A65005F2E20 /* ResultTableViewCell.swift in Sources */,
 				58702C822311A0990079622D /* BaseViewController.swift in Sources */,
 				58702C872311A69D0079622D /* BaseButton.swift in Sources */,
 				58702C842311A1110079622D /* HomeViewController.swift in Sources */,
+				58B8E6C923128648005F2E20 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +407,7 @@
 			baseConfigurationReference = 7F914746282176BE874EE5EB /* Pods-XoSoVietlott.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W4VACB9M8;
 				INFOPLIST_FILE = XoSoVietlott/Info.plist;
@@ -400,6 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ekino.XoSoVietlott;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,6 +428,7 @@
 			baseConfigurationReference = 9EDC2A72003D4462A5CDC9B0 /* Pods-XoSoVietlott.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W4VACB9M8;
 				INFOPLIST_FILE = XoSoVietlott/Info.plist;
@@ -419,6 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ekino.XoSoVietlott;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
