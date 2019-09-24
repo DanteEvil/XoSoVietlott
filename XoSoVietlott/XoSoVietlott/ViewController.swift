@@ -40,7 +40,7 @@ class ViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.performSegue(withIdentifier: String(describing: HomeViewController.self), sender: nil)
+            self.performSegue(withIdentifier: String(describing: PriceSelectViewController.self), sender: nil)
         }
     }
 }

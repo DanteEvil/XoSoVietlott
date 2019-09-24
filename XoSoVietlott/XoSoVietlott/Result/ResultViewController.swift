@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import BaseComponentKit
 
 class ResultViewController: BaseViewController {
+    @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var resultTableView: UITableView!
     var data: [[Int]] = []
-    
+    var price = Price.mega
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let numString = data.count.stringValue()
+        let priceString = price.rawValue
+        let rawString = String(format: "Lấy %d vé %@", data.count, price.rawValue)
+        let attributesString = NSMutableAttributedString(string: rawString)
+        attributesString.addAttribute(.foregroundColor, value: UIColor.red, range: NSRange(rawString.range(of: numString)!, in: rawString))
+        attributesString.addAttribute(.foregroundColor, value: UIColor.red, range: NSRange(rawString.range(of: priceString)!, in: rawString))
+        topLabel.attributedText = attributesString
+    }
 
     /*
     // MARK: - Navigation
@@ -28,10 +39,6 @@ class ResultViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func backToHome(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
 }
 
 extension ResultViewController: UITableViewDelegate, UITableViewDataSource {

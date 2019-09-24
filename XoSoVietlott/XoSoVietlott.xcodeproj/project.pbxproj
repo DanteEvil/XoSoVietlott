@@ -17,8 +17,11 @@
 		58702C822311A0990079622D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C812311A0990079622D /* BaseViewController.swift */; };
 		58702C842311A1110079622D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C832311A1110079622D /* HomeViewController.swift */; };
 		58702C872311A69D0079622D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58702C862311A69D0079622D /* BaseButton.swift */; };
+		587F32E52339FCB400069E9B /* PriceSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587F32E42339FCB400069E9B /* PriceSelectViewController.swift */; };
 		58B8E6C923128648005F2E20 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8E6C823128648005F2E20 /* ResultViewController.swift */; };
 		58B8E6CB23128A65005F2E20 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */; };
+		58E7FC13233A02790096C9FD /* waiting.json in Resources */ = {isa = PBXBuildFile; fileRef = 58E7FC12233A02790096C9FD /* waiting.json */; };
+		58E7FC16233A059A0096C9FD /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E7FC15233A059A0096C9FD /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +37,11 @@
 		58702C812311A0990079622D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		58702C832311A1110079622D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		58702C862311A69D0079622D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		587F32E42339FCB400069E9B /* PriceSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSelectViewController.swift; sourceTree = "<group>"; };
 		58B8E6C823128648005F2E20 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		58E7FC12233A02790096C9FD /* waiting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waiting.json; sourceTree = "<group>"; };
+		58E7FC15233A059A0096C9FD /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		7F914746282176BE874EE5EB /* Pods-XoSoVietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XoSoVietlott.debug.xcconfig"; path = "Target Support Files/Pods-XoSoVietlott/Pods-XoSoVietlott.debug.xcconfig"; sourceTree = "<group>"; };
 		9EDC2A72003D4462A5CDC9B0 /* Pods-XoSoVietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XoSoVietlott.release.xcconfig"; path = "Target Support Files/Pods-XoSoVietlott/Pods-XoSoVietlott.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,8 @@
 		58702C6B23119C780079622D /* XoSoVietlott */ = {
 			isa = PBXGroup;
 			children = (
+				58E7FC14233A057E0096C9FD /* Models */,
+				587F32E32339FC7900069E9B /* Prices */,
 				58B8E6C723128632005F2E20 /* Result */,
 				58702C882311A7FF0079622D /* Home */,
 				58702C852311A6730079622D /* Extensions */,
@@ -99,6 +107,7 @@
 		58702C7E23119D920079622D /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
+				58E7FC12233A02790096C9FD /* waiting.json */,
 				58702C7F23119E500079622D /* lottery.json */,
 			);
 			path = LottieFiles;
@@ -120,6 +129,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		587F32E32339FC7900069E9B /* Prices */ = {
+			isa = PBXGroup;
+			children = (
+				587F32E42339FCB400069E9B /* PriceSelectViewController.swift */,
+			);
+			path = Prices;
+			sourceTree = "<group>";
+		};
 		58B8E6C723128632005F2E20 /* Result */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +144,14 @@
 				58B8E6CA23128A65005F2E20 /* ResultTableViewCell.swift */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		58E7FC14233A057E0096C9FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58E7FC15233A059A0096C9FD /* Price.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		95F4ED7FCA73060A4BD5D0DE /* Pods */ = {
@@ -201,6 +226,7 @@
 				58702C7723119C790079622D /* LaunchScreen.storyboard in Resources */,
 				58702C8023119E500079622D /* lottery.json in Resources */,
 				58702C7423119C790079622D /* Assets.xcassets in Resources */,
+				58E7FC13233A02790096C9FD /* waiting.json in Resources */,
 				58702C7223119C780079622D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +284,8 @@
 				58702C6D23119C780079622D /* AppDelegate.swift in Sources */,
 				58B8E6CB23128A65005F2E20 /* ResultTableViewCell.swift in Sources */,
 				58702C822311A0990079622D /* BaseViewController.swift in Sources */,
+				587F32E52339FCB400069E9B /* PriceSelectViewController.swift in Sources */,
+				58E7FC16233A059A0096C9FD /* Price.swift in Sources */,
 				58702C872311A69D0079622D /* BaseButton.swift in Sources */,
 				58702C842311A1110079622D /* HomeViewController.swift in Sources */,
 				58B8E6C923128648005F2E20 /* ResultViewController.swift in Sources */,

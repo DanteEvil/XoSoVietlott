@@ -1,4 +1,5 @@
 PODS:
+  - BaseComponentKit (0.0.1)
   - lottie-ios (3.1.2)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -8,6 +9,7 @@ PODS:
   - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - BaseComponentKit (from `./Frameworks/BaseComponentKit`)
   - lottie-ios
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -19,12 +21,17 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
 
+EXTERNAL SOURCES:
+  BaseComponentKit:
+    :path: "./Frameworks/BaseComponentKit"
+
 SPEC CHECKSUMS:
+  BaseComponentKit: 4cf3cc0e3f856117b1790ac7b591fbcb9a342042
   lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: bf6a70ff38de711a9c46a87886673aebc4e53aef
+PODFILE CHECKSUM: 0e5bcd24520cf8a3c460865773a0b8dddda46c97
 
 COCOAPODS: 1.7.5

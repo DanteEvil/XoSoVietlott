@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+import BaseComponentKit
 
-
-
-class BaseViewController: UIViewController {
+class BaseViewController: GBaseViewController {
+    @IBAction func backButtonOnTouch(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }
